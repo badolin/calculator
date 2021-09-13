@@ -7,15 +7,15 @@ class Calculator:
         print('Your Result =' + str(result_add))
 
     def subtract(self, value1_subtract, value2_subtract):
-        result_subtract = value1_subtract + value2_subtract
+        result_subtract = value1_subtract - value2_subtract
         print('Your Result =' + str(result_subtract))
 
     def multiply(self, value1_multiply, value2_multiply):
-        result_multiply = value1_multiply + value2_multiply
+        result_multiply = value1_multiply * value2_multiply
         print('Your Result =' + str(result_multiply))
 
     def divide(self, value1_divide, value2_divide):
-        result_divide = value1_divide + value2_divide
+        result_divide = value1_divide / value2_divide
         print('Your Result =' + str(result_divide))
 
 def main():

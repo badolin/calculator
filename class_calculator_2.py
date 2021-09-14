@@ -16,8 +16,10 @@ class Calculator:
 
     @staticmethod
     def divide(value1_divide, value2_divide):
-        return value1_divide / value2_divide
-
+        try:
+            return value1_divide / value2_divide
+        except ZeroDivisionError:
+            print('You cant write 0')
 
 def menu_add():
     system('clear')
@@ -64,27 +66,22 @@ def menu():
     elif value == 4:
         menu_divide()
     elif value == 5:
-        return
+        return "USER_QUIT"
     else:
         system('clear')
         print('You write wrong number' + str(value))
 
 def main():
     print('Welcome to my calculator!')
-    n=0
-    while n<3:
+    while True:
         try:
-            menu()
-            n=n+1
+            if menu() == "USER_QUIT":
+                break
         except ValueError:
             system('clear')
             print('You dont write a number')
-            n=n+1
             continue
-        except ZeroDivisionError:
-            print('You cant write 0')
-            n=n+1
-            continue
+
 
 
 if __name__ == '__main__':

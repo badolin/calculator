@@ -265,7 +265,7 @@ def console_menu():
             print("Fisrt argument must be one of them:")
             print("--add --subtract --multiply --divide --power --root")
             print("the next two must be numbers")
-            print("for example: main.py --power 3.2 5.1")
+            print("for example: bulbulator.py --power 3.2 5.1")
             return
         if name_function == '--add':
             console_add(first_value, second_value)
@@ -285,7 +285,7 @@ def console_menu():
         print("Fisrt argument must be one of them:")
         print("--add --subtract --multiply --divide --power --root")
         print("the next two must be numbers")
-        print("for example: main.py --power 3.2 5.1")
+        print("for example: bulbulator.py --power 3.2 5.1")
 
 ################################################
 ################################################
